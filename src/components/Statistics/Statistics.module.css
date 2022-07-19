@@ -1,0 +1,11 @@
+.header {
+  color: rgb(185, 125, 241);
+  font-size: 50px;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  color: rgb(210, 185, 47);
+  text-align: center;
+}
