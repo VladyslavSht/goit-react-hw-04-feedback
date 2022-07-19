@@ -9,7 +9,7 @@ function FeedbackOptions({ options, OnLeaveFeedback }) {
             <button
               type="button"
               className={s.button}
-              onClick={() => OnLeaveFeedback(option)}
+              onClick={() => OnLeaveFeedback({ type: option })}
             >
               {option[0].toUpperCase() + option.slice(1, option.length)}
             </button>

@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-function Statistics({ good, neutral, bad, total, positivePercentage }) {
+function Statistics({ good, neutral, bad, total }) {
+  const positivePercentage = Math.round((good / total) * 100);
+
   return (
     <div>
       <h2 className={s.header}>Statistics</h2>
@@ -20,7 +22,6 @@ Statistics.propTypes = {
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
